@@ -4,11 +4,22 @@ import App from './App.jsx'
 import "./styles/App.css"
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import BathsCatalog from "./pages/BathsCatalog.jsx";
+import Cart from "./pages/Cart.jsx"
 
 const router = createBrowserRouter([
     {
-        path: "/",
         element: <App/>,
+        children: [
+            {
+                path: "/",
+                element: <BathsCatalog/>,
+            },
+            {
+                path: "/Cart",
+                element: <Cart/>
+            },
+        ],
     },
 ]);
 

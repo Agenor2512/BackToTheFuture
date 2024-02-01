@@ -1,0 +1,16 @@
+#headContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#headContainer h1 {
+    padding-left: 1rem;
+}
+
+#headContainer #logo {
+    width: 10%;
+    height: 10%;
+}
+
