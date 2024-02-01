@@ -1,4 +1,17 @@
 {
+
+  "name": "backtothefuture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+
   "name": "template-fullstack",
   "version": "4.2.0",
   "description": "project template for the React-Express-MySQL cursus in Wild Code School",
