@@ -7,7 +7,7 @@
         "nom": "Terme di Caracalla",
         "prix": "35€",
         "note": "4/5",
-        " horaire": "Lundi: 9h00 - 17h30, Mardi: 10h15 - 18h45, Mercredi: 8h30 - 16h00, Jeudi: 11h00 - 19h30, Vendredi: 9h45 - 18h15, Samedi: 10h30 - 17h00, Dimanche: 12h00 - 20h30",
+        "horaire": ["Lundi: 9h00 - 17h30", "Mardi: 10h15 - 18h45", "Mercredi: 8h30 - 16h00", "Jeudi: 11h00 - 19h30", "Vendredi: 9h45 - 18h15", "Samedi: 10h30 - 17h00", "Dimanche: 12h00 - 20h30"],
         "description": "Les Thermes de Caracalla, parmi les plus grands complexes thermaux de l'Empire romain, offraient des installations luxueuses, dont des bains chauds, des salles de massage, des gymnases et des jardins. Leur architecture grandiose témoigne de la splendeur et du raffinement de la Rome antique."
       },
   
@@ -18,7 +18,7 @@
         "nom": "Terme di Diocleziano",
         "prix": "300€",
         "note": "3.8/5",
-        "horaire": "Lundi: 9h30 - 18h00, Mardi: 11h15 - 19h45, Mercredi: 9h00 - 16h45, Jeudi: 10h30 - 18h00, Vendredi: 8h45 - 17h15, Samedi: 11h00 - 17h45, Dimanche: 13h00 - 21h30",
+        "horaire": ["Lundi: 9h30 - 18h00", "Mardi: 11h15 - 19h45", "Mercredi: 9h00 - 16h45", "Jeudi: 10h30 - 18h00", "Vendredi: 8h45 - 17h15", "Samedi: 11h00 - 17h45", "Dimanche: 13h00 - 21h30"],
         "description": "Les Thermes de Dioclétien étaient des thermes impériaux monumentaux, dotés de vastes salles de bains, de bibliothèques et de jardins. Construits sous le règne de l'empereur Dioclétien, ils reflètent la grandeur et l'ingéniosité de l'architecture romaine."
       },
   
@@ -29,7 +29,7 @@
         "nom": "Terme di Traiano",
         "prix": "140€",
         "note": "4.5/5",
-        "horaire": "Lundi: 8h15 - 16h45, Mardi: 9h45 - 18h15, Mercredi: 10h00 - 17h30, Jeudi: 12h00 - 20h30, Vendredi: 9h30 - 18h00, Samedi: 10h45 - 17h15, Dimanche: 11h30 - 19h00",
+        "horaire": ["Lundi: 8h15 - 16h45", "Mardi: 9h45 - 18h15", "Mercredi: 10h00 - 17h30", "Jeudi: 12h00 - 20h30", "Vendredi: 9h30 - 18h00", "Samedi: 10h45 - 17h15", "Dimanche: 11h30 - 19h00"],
         "description": "Les Thermes de Trajan, inaugurés sous le règne de l'empereur Trajan, étaient réputés pour leur sophistication architecturale et leurs installations de relaxation, y compris des bains chauds, des saunas et des salles de repos, offrant une expérience de bien-être inégalée à l'époque."
       },
   
@@ -40,73 +40,73 @@
         "nom": "Terme di Agrippa",
         "prix": "250€",
         "note": "4.7/5",
-        "horaire": "Lundi: 10h00 - 17h30, Mardi: 8h30 - 16h00, Mercredi: 11h15 - 19h45, Jeudi: 9h45 - 18h15, Vendredi: 10h30 - 18h00, Samedi: 8h45 - 17h15, Dimanche: 12h30 - 20h00",
+        "horaire": ["Lundi: 10h00 - 17h30", "Mardi: 8h30 - 16h00", "Mercredi: 11h15 - 19h45", "Jeudi: 9h45 - 18h15", "Vendredi: 10h30 - 18h00", "Samedi: 8h45 - 17h15", "Dimanche: 12h30 - 20h00"],
         "description": " Les Thermes d'Agrippa, commandés par Marcus Vipsanius Agrippa, beau-fils de l'empereur Auguste, étaient parmi les premiers complexes thermaux de Rome, marquant le début de la tradition romaine des bains publics."
       },
   
       {
         "id": 5,
-        "image": [],
+        "image": [ "/assets/images/id5img.png", "/assets/images/id51img.png", "/assets/images/id52img"],
         "lieu": "Via dei Fori Imperiali, Rome",
         "nom": "Terme di Antonino e Faustina",
         "prix": "120€",
         "note": "4.6/5",
-        "horaire": "Lundi: 9h15 - 17h45, Mardi: 10h45 - 18h15, Mercredi: 9h30 - 17h00, Jeudi: 11h30 - 19h00, Vendredi: 10h15 - 17h45, Samedi: 12h00 - 20h30, Dimanche: 9h45 - 18h15",
+        "horaire": ["Lundi: 9h15 - 17h45", "Mardi: 10h45 - 18h15", "Mercredi: 9h30 - 17h00", "Jeudi: 11h30 - 19h00", "Vendredi: 10h15 - 17h45", "Samedi: 12h00 - 20h30", "Dimanche: 9h45 - 18h15"],
         "description": "Les Thermes d'Antonin et Faustine, dédiés à l'empereur Antonin le Pieux et à son épouse Faustine, offraient des services de bains chauds, de massages et de relaxation, devenant des lieux de rencontre sociale et politique dans la Rome antique."
       },
   
       {
         "id": 6,
-        "image": [],
+        "image": ["/assets/images/id6img.png", "/assets/images/id61img.png", "/assets/images/id62img"],
         "lieu": "Via Condotti, Rome",
         "nom": "Terme di Nerone",
         "prix": "99€",
         "note": "3.9/5",
-        "horaire": "Lundi: 11h30 - 19h00, Mardi: 10h00 - 17h30, Mercredi: 9h15 - 17h45, Jeudi: 11h45 - 19h15, Vendredi: 8h30 - 16h00, Samedi: 10h45 - 18h15, Dimanche: 9h30 - 17h00",
+        "horaire": ["Lundi: 11h30 - 19h00", "Mardi: 10h00 - 17h30", "Mercredi: 9h15 - 17h45", "Jeudi: 11h45 - 19h15", "Vendredi: 8h30 - 16h00", "Samedi: 10h45 - 18h15", "Dimanche: 9h30 - 17h00"],
         "description": "Les Thermes de Néron, bien que jamais achevés, étaient destinés à être parmi les plus somptueux de Rome. L'ambitieux projet de construction reflète le faste et la grandeur associés au règne de l'empereur Néron."
       },
   
       {
         "id": 7,
-        "image": [],
+        "image": ["/assets/images/id7img.png", "/assets/images/id71img.png", "/assets/images/id72img"],
         "lieu": "Via Giulia, Rome",
         "nom": "Terme di Tito",
         "prix": "87€",
         "note": "4.3/5",
-        "horaire": "Lundi: 9h30 - 17h00, Mardi: 10h15 - 17h45, Mercredi: 8h45 - 16h15, Jeudi: 11h30 - 19h00, Vendredi: 10h00 - 17h30, Samedi: 9h15 - 16h45, Dimanche: 12h15 - 20h45",
+        "horaire": ["Lundi: 9h30 - 17h00", "Mardi: 10h15 - 17h45", "Mercredi: 8h45 - 16h15", "Jeudi: 11h30 - 19h00", "Vendredi: 10h00 - 17h30", "Samedi: 9h15 - 16h45", "Dimanche: 12h15 - 20h45"],
         "description": " Les Thermes de Titus, érigés sous le règne de l'empereur Titus, étaient parmi les premiers à introduire des éléments architecturaux novateurs, comme des voûtes en berceau et des mosaïques, définissant ainsi les normes pour les complexes thermaux ultérieurs."
       },
   
       {
         "id": 8,
-        "image": [],
+        "image": ["/assets/images/id8img.png", "/assets/images/id81img.png", "/assets/images/id82img"],
         "lieu": "Via del Babuino, Rome",
         "nom": "Terme di Settimio Severo",
         "prix": "70€",
         "note": "4.6/5",
-        "horaire": "Lundi: 11h00 - 18h30, Mardi: 9h30 - 17h00, Mercredi: 10h15 - 17h45, Jeudi: 8h30 - 16h00, Vendredi: 11h30 - 19h00, Samedi: 9h45 - 17h15, Dimanche: 10h30 - 18h00",
-        "description": " Les Thermes de Titus, érigés sous le règne de l'empereur Titus, étaient parmi les premiers à introduire des éléments architecturaux novateurs, comme des voûtes en berceau et des mosaïques, définissant ainsi les normes pour les complexes thermaux ultérieurs."
+        "horaire": ["Lundi: 11h00 - 18h30", "Mardi: 9h30 - 17h00", "Mercredi: 10h15 - 17h45", "Jeudi: 8h30 - 16h00", "Vendredi: 11h30 - 19h00", "Samedi: 9h45 - 17h15", "Dimanche: 10h30 - 18h00"],
+        "description": " Les Thermes de Septime Sévère, construits sous l'empereur Septime Sévère, étaient réputés pour leur ingénierie avancée, leur chauffage central et leurs vastes espaces de détente, offrant un confort inégalé aux habitants de la Rome impériale."
       },
   
       {
         "id": 9,
-        "image": [],
+        "image": ["/assets/images/id9img.png", "/assets/images/id91img.png", "/assets/images/id92img"],
         "lieu": "Via Cavour, Rome",
         "nom": "Terme di Costantino",
         "prix": "160€",
         "note": "4.4/5",
-        "horaire": "Lundi: 9h45 - 17h15, Mardi: 11h30 - 19h00, Mercredi: 10h00 - 17h30, Jeudi: 9h15 - 16h45, Vendredi: 10h30 - 18h00, Samedi: 11h15 - 18h45, Dimanche: 8h45 - 16h15",
+        "horaire": ["Lundi: 9h45 - 17h15", "Mardi: 11h30 - 19h00", "Mercredi: 10h00 - 17h30", "Jeudi: 9h15 - 16h45", "Vendredi: 10h30 - 18h00", "Samedi: 11h15 - 18h45", "Dimanche: 8h45 - 16h15"],
         "description": "Les Thermes de Constantin, commandés par l'empereur Constantin, étaient parmi les derniers grands complexes thermaux construits à Rome, reflétant le déclin progressif de la civilisation romaine et la transition vers une époque médiévale."
       },
   
       {
         "id": 10,
-        "image": [],
+        "image": ["/assets/images/id10img.png", "/assets/images/id101img.png", "/assets/images/id102img"],
         "lieu": "Via del Governo Vecchio, Rome",
         "nom": "Terme di Vespasiano",
         "prix": "50€",
         "note": "4.2/5",
-        "horaire": "Lundi: 10h00 - 17h30, Mardi: 8h30 - 16h00, Mercredi: 11h15 - 19h45, Jeudi: 9h45 - 18h15, Vendredi: 10h30 - 18h00, Samedi: 8h45 - 17h15, Dimanche: 12h30 - 20h00",
+        "horaire": ["Lundi: 10h00 - 17h30", "Mardi: 8h30 - 16h00", "Mercredi: 11h15 - 19h45", "Jeudi: 9h45 - 18h15", "Vendredi: 10h30 - 18h00", "Samedi: 8h45 - 17h15", "Dimanche: 12h30 - 20h00"],
         "description": " Les Thermes de Vespasien, nommés en l'honneur de l'empereur Vespasien, témoignaient de l'importance accordée aux bains publics dans la vie quotidienne des Romains, offrant des services de bien-être et de détente à travers des installations sophistiquées et luxueuses."
       }
     ]

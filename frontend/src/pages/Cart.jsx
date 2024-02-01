@@ -1,5 +1,10 @@
+import { useLoaderData } from "react-router-dom";
+// import { useContext } from "react";
+
 function Cart() {
-    return <p>Hello Cart</p>;
+  const panier = useLoaderData();
+
+  return <div>{panier}</div>;
 }
 
 export default Cart;
