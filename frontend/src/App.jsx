@@ -1,7 +1,8 @@
 import './styles/App.css'
+import ThermesCatalog from './components/ThermesCatalog';
 
 function App() {
-    return <></>;
+    return <ThermesCatalog/>;
 }
 
 export default App
