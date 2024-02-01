@@ -1,5 +1,4 @@
 import "./styles/App.css";
-import ThermesCatalog from "./components/ThermesCatalog";
 // import ThermesCard from "./components/ThermesCard";
 import "./styles/App.css";
 import { Outlet } from "react-router-dom";
