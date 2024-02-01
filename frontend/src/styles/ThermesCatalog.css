@@ -1,0 +1,37 @@
+.allBathCardOverview > div {
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  margin-bottom: 31px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.allBathCardOverview > div > h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.allBathCardOverview > div > p {
+  padding: 15px;
+}
+
+.divButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divButton > button {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+}
