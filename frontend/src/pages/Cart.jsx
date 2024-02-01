@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 function Cart() {
   const panier = useLoaderData();
 
-  return <div>{panier}</div>;
+  return <div>{panier}hello</div>;
 }
 
 export default Cart;
