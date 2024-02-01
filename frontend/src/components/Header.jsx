@@ -1,60 +1,72 @@
-import {Link} from "react-router-dom";
-import {useState} from "react";
-
-import logo from "../assets/colonne.png";
-import navigationIcon from "../assets/menu_FILL0_wght400_GRAD0_opsz24.svg";
-
-import "../styles/Header.css";
-import "../styles/Navigation.css"
-
-function Header() {
-  const [isNavigationOpen, setIsNavigationOpen] = useState(false);
-
-  const openNavigation = () => {
-    setIsNavigationOpen(true);
-  };
-
-  const closeNavigation = () => {
-    setIsNavigationOpen(false);
-  };
-
-  return (
-    <header>
-      <section className="headerContent">
-        <div id="headContainer">
-          <img id="logo" src={logo} alt="logo"/>
-          <h1>Baths Guide</h1>
-        </div>
-
-        <nav>
-          <section className={`sideNavigationContainer ${isNavigationOpen ? "openNavigation" : ""}`}>
-            <button type="button"
-                    className="closeNavigation"
-                    onClick={closeNavigation}>
-              &times;
-            </button>
-
-            <div className="openButtonContainer">
-              <button type="button"
-                      className="openNavigation"
-                      onClick={openNavigation}>
-                <img src={navigationIcon} alt="Navigation icon"/>
+import { useState } from "react";
+  import { Link } from "react-router-dom";
+  
+  import logo from "../assets/colonne.png";
+  import navigationIcon from "../assets/barre-de-menu.png";
+  
+  import "../styles/Header.css";
+  
+  function Header() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+  
+    const openNav = () => {
+      setIsNavOpen(true);
+    };
+  
+    const closeNav = () => {
+      setIsNavOpen(false);
+    };
+  
+    return (
+      <header>
+        <div className="header-content">
+          <div className="logo-container">
+            <img src={logo} alt="logo" />
+            <h1>Bath Gate</h1>
+            <div className="desktopNav">
+              <ul>
+                <Link to="/">
+                  <li>Catalog</li>
+                </Link>
+                <Link to="/Cart">
+                  <li>Cart</li>
+                </Link>
+              </ul>
+            </div>
+          </div>
+          <nav>
+            <div id="mySidenav" className={`sidenav ${isNavOpen ? "open" : ""}`}>
+              <button
+                type="button"
+                id="closeBtn"
+                href="#"
+                className="close"
+                onClick={closeNav}
+              >
+                &times;
+              </button>
+              <ul>
+                <Link to="/">
+                  <li>Catalog</li>
+                </Link>
+                <Link to="/Cart">
+                  <li>Cart</li>
+                </Link>
+              </ul>
+            </div>
+            <div className="button-container">
+              <button type="button" id="openBtn" onClick={openNav}>
+                <img
+                  className="navigationIcon"
+                  src={navigationIcon}
+                  alt="Navigation icon"
+                />
               </button>
             </div>
-
-            <ul>
-              <Link to="/">
-                <li>Catalog</li>
-              </Link>
-              <Link to="/Cart">
-                <li>Cart</li>
-              </Link>
-            </ul>
-          </section>
-        </nav>
-      </section>
-    </header>
-  );
-}
-
-export default Header;
+          </nav>
+        </div>
+      </header>
+    );
+  }
+  
+  export default Header;   
