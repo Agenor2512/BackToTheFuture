@@ -1,8 +1,14 @@
-import './styles/App.css'
-import ThermesCatalog from './components/ThermesCatalog';
+import "./styles/App.css";
+import ThermesCatalog from "./components/ThermesCatalog";
+// import ThermesCard from "./components/ThermesCard";
 
 function App() {
-    return <ThermesCatalog/>;
+  return (
+    <>
+      <ThermesCatalog />
+      {/* <ThermesCard /> */}
+    </>
+  );
 }
 
-export default App
+export default App;

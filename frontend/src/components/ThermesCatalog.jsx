@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "/src/styles/ThermesCatalog.css";
+import ThermesPopup from "./ThermesPopup";
 
 function ThermesCatalog() {
   const baths = [
@@ -56,7 +57,7 @@ function ThermesCatalog() {
             pur.
           </p>
           <div className="divButton">
-            <button type="button"> Réservez cette therme </button>
+            <ThermesPopup />
           </div>
         </div>
       ))}
