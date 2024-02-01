@@ -1,7 +1,10 @@
 import './styles/App.css'
+import Footer from "./components/Footer.jsx";
 
 function App() {
-    return <></>;
+  return <>
+    <Footer/>
+  </>;
 }
 
 export default App
