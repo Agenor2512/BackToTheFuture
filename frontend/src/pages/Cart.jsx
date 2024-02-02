@@ -12,7 +12,7 @@ function Cart() {
   return (
     <>
       <h1>Mon Panier</h1>
-      <CartDetails therme={cart} />
+      <CartDetails />
       <h2>Prix total :</h2>
       <h4>{/*calculCartSum()*/} euros</h4>
     </>

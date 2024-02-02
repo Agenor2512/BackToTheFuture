@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Popup from "reactjs-popup";
 import { useState, useContext } from "react";
 import ThermesContext from "../contexts/ThermeContext";
