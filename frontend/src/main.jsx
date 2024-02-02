@@ -1,13 +1,14 @@
 import React from "react";
+import axios from "axios";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-//import { ThermesProvider } from './contexts/ThermeContext.jsx';
-// import { getAll } from "./services/panier.js";
 import ReactDOM from "react-dom/client";
 
 import App from "./App.jsx";
 import "./styles/App.css";
 
-import ThermesCatalog from "./components/ThermesCatalog.jsx";
+import { CartProvider } from "./contexts/CartContext.jsx";
+
+import ThermesCatalog from "./pages/ThermesCatalog.jsx";
 import Cart from "./pages/Cart.jsx";
 
 const router = createBrowserRouter([
@@ -17,17 +18,25 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <ThermesCatalog />,
+        loader: () =>
+          axios.get("http://localhost:8000/thermes").then((res) => res.data),
       },
       {
-        path: "/Cart",
+        path: "/cart",
         element: <Cart />,
+        loader: () =>
+          axios.get("http://localhost:8000/thermes").then((res) => res.data),
       },
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </React.StrictMode>
 );

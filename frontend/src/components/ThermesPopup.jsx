@@ -1,12 +1,23 @@
+/* eslint-disable react/prop-types */
 import Popup from "reactjs-popup";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import ThermesContext from "../contexts/ThermeContext";
+// import { useLoaderData } from "react-router-dom";
 
 import cartIcon from "../assets/icon-panier.png";
 
 import "../styles/ThermesPopup.css";
 
-function ThermesPopup() {
+function ThermesPopup({ therme }) {
   const [quantity, setQuantity] = useState(0);
+  const [addedArticle, setAddedArticle] = useContext(ThermesContext);
+
+  const handleClick = () => {
+    setAddedArticle({
+      ...addedArticle,
+      userReservation: therme,
+    });
+  };
 
   const addArticle = () => {
     setQuantity((previousValue) => previousValue + 1);
@@ -30,22 +41,14 @@ function ThermesPopup() {
         <div className="modal">
           <div className="header">
             {" "}
-            <img
-              src="https://www.larousse.fr/encyclopedie/data/images/1008518-La_Terre.jpg"
-              alt="terre"
-            />
+            <img src={therme.image} alt="terre" />
           </div>
           <div className="content">
-            <p>Note :</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              magni omnis delectus nemo, maxime molestiae dolorem numquam
-              mollitia, voluptate ea, accusamus excepturi deleniti ratione
-              sapiente! Laudantium, aperiam doloribus. Odit, aut.
-            </p>
+            <p>Note : {therme.note}</p>
+            <p>{therme.description}</p>
             <div id="infosContainer">
-              <p>Horaires :</p>
-              <p>Adresse :</p>
+              <p>Horaires : {therme.horaire}</p>
+              <p>Adresse :{therme.lieu}</p>
             </div>
 
             <div id="shoppingPartContainer">
@@ -60,10 +63,10 @@ function ThermesPopup() {
             </div>
 
             <div className="buttonsContainer">
-              <button id="addToCartButton">
+              <button id="addToCartButton" onClick={handleClick}>
                 <img src={cartIcon} alt="cart icon" />
               </button>
-              <p id="prix">Prix :</p>
+              <p id="prix">Prix :{therme.prix}</p>
               <div className="actions">
                 <button
                   id="closeButton"
