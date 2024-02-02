@@ -1,0 +1,20 @@
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .image-slider img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .image-slider img.active {
+    display: block;
+  }
