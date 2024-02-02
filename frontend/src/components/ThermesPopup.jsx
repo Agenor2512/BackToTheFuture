@@ -1,8 +1,6 @@
 /* eslint-disable react/prop-types */
 import Popup from "reactjs-popup";
-import { useState, useContext } from "react";
-import ThermesContext from "../contexts/ThermeContext";
-// import { useLoaderData } from "react-router-dom";
+import { useState } from "react";
 
 import cartIcon from "../assets/icon-panier.png";
 
@@ -10,14 +8,6 @@ import "../styles/ThermesPopup.css";
 
 function ThermesPopup({ therme }) {
   const [quantity, setQuantity] = useState(0);
-  const [addedArticle, setAddedArticle] = useContext(ThermesContext);
-
-  const handleClick = () => {
-    setAddedArticle({
-      ...addedArticle,
-      userReservation: therme,
-    });
-  };
 
   const addArticle = () => {
     setQuantity((previousValue) => previousValue + 1);
@@ -40,8 +30,7 @@ function ThermesPopup({ therme }) {
       {(close) => (
         <div className="modal">
           <div className="header">
-            {" "}
-            <img src={therme.image} alt="terre" />
+            <img src={`http://localhost:8000${therme.image[0]}`} alt="terre" />
           </div>
           <div className="content">
             <p>Note : {therme.note}</p>
@@ -55,15 +44,15 @@ function ThermesPopup({ therme }) {
               <div id="ticketsPartContainer">
                 <div className="moreLess">
                   <p id="billets">Billets</p>
-                  <button onClick={addArticle}>+</button>
-                  <p>{quantity}</p>
                   <button onClick={removeArticle}>-</button>
+                  <p>{quantity}</p>
+                  <button onClick={addArticle}>+</button>
                 </div>
               </div>
             </div>
 
             <div className="buttonsContainer">
-              <button id="addToCartButton" onClick={handleClick}>
+              <button id="addToCartButton">
                 <img src={cartIcon} alt="cart icon" />
               </button>
               <p id="prix">Prix :{therme.prix}</p>

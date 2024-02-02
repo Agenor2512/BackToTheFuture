@@ -2,11 +2,9 @@
   "thermes": [
     {
       "id": 1,
-      "image": [
-        "/backend/public/assets/images/Roman_baths_9.webp",
-        "/backend/public/assets/images/Roman_baths_9.webp",
-        "/backend/public/assets/images/Roman_baths_9.webp"
-      ],
+      "image": 
+        ["/assets/images/Roman_bathhouse.png", "/assets/images/Roman_bathhouse_2.png", "/assets/images/Roman_bathhouse_3.png"],
+      
       "lieu": "Via Aldo Manuzio, Rome",
       "nom": "Terme di Caracalla",
       "prix": "35€",

@@ -6,10 +6,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./styles/App.css";
 
-import { CartProvider } from "./contexts/CartContext.jsx";
-
 import ThermesCatalog from "./pages/ThermesCatalog.jsx";
 import Cart from "./pages/Cart.jsx";
+import ThermeOverview from "./components/ThermeOverview.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,8 +34,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <CartProvider>
-      <RouterProvider router={router} />
-    </CartProvider>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

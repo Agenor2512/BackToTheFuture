@@ -1,0 +1,10 @@
+.cardOverviewContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

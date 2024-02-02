@@ -1,11 +1,11 @@
-function CartDetails({ therme }) {
+function CartDetails() {
   return (
     <div>
-      {therme.map((t) => (
-        <div key={t.id}>
-          <img src={t.image[1]} alt={t.nom} />
-          <h1>{t.nom}</h1>
-          <p>{t.description}</p>
+      {selectedThermes.map((therme) => (
+        <div key={therme.id}>
+          <img src={therme.image[1]} alt={therme.nom} />
+          <h1>{therme.nom}</h1>
+          <p>{therme.description}</p>
         </div>
       ))}
     </div>

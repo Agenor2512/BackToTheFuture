@@ -3,7 +3,7 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import "/src/styles/ThermesCatalog.css";
 import ThermesPopup from "../components/ThermesPopup";
-import CartDetails from "../components/CartDetails";
+import ThermeOverview from "../components/ThermeOverview";
 
 function ThermesCatalog() {
   const thermes = useLoaderData();
@@ -12,14 +12,13 @@ function ThermesCatalog() {
     <>
       <div className="allBathCardOverview">
         {thermes.map((therme) => (
-          <CartDetails key={therme.id} therme={therme} />
+          <ThermeOverview therme={therme} />
         ))}
-        ;
         <div className="divButton">
-          {thermes.map((therme) => (
+          {/* {thermes.map((therme) => (
             <ThermesPopup key={therme.id} therme={therme} />
           ))}
-          ;
+          ; */}
         </div>
       </div>
     </>
